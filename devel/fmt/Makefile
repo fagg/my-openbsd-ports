@@ -1,29 +1,26 @@
 # $OpenBSD: Makefile.template,v 1.88 2020/05/15 01:32:48 abieber Exp $
 
-COMMENT= 	alternative formatting library for C and C++
+COMMENT=	alternative formatting library for C and C++
 
-GH_ACCOUNT= 	fmtlib
-GH_PROJECT= 	fmt
-GH_TAGNAME= 	7.1.1
+GH_ACCOUNT=	fmtlib
+GH_PROJECT=	fmt
+GH_TAGNAME=	7.1.1
 
-SHARED_LIBS=	flatbuffers	0.0	#1.12
+SHARED_LIBS=	fmt	0.0
 
-CATEGORIES= 	devel
-HOMEPAGE=   	https://github.com/fmtlib/fmt
+CATEGORIES=	devel
 
-MAINTAINER= 	Ashton Fagg <ashton@fagg.id.au>
+MAINTAINER=	Ashton Fagg <ashton@fagg.id.au>
 
 # MIT
-PERMIT_PACKAGE= Yes
+PERMIT_PACKAGE=	Yes
 
 # C++11
-COMPILER= 	 base-clang
-MODULES=  	 devel/cmake
-WANTLIB=  ${COMPILER_LIBCXX} c pthread
+COMPILER=	base-clang ports-gcc
+MODULES=	devel/cmake
+WANTLIB+=	c++ c++abi ${COMPILER_LIBCXX}
 
-CONFIGURE_ARGS+= -DFMT_PEDANTIC=on \
-		 -DFMT_DOC=on \
-		 -DFMT_INSTALL=on \
-		 -DBUILD_SHARED_LIBS=on
+
+CONFIGURE_ARGS+=-DBUILD_SHARED_LIBS=on
 
 .include <bsd.port.mk>

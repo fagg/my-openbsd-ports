@@ -18,6 +18,5 @@ lib/cmake/fmt/fmt-config-version.cmake
 lib/cmake/fmt/fmt-config.cmake
 lib/cmake/fmt/fmt-targets${MODCMAKE_BUILD_SUFFIX}
 lib/cmake/fmt/fmt-targets.cmake
-lib/libfmt.so.7
-lib/libfmt.so.7.1.1
+@lib lib/libfmt.so.${LIBfmt_VERSION}
 lib/pkgconfig/fmt.pc
