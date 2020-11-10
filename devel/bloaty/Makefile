@@ -14,15 +14,17 @@ MAINTAINER= 	Ashton Fagg <ashton@fagg.id.au>
 PERMIT_PACKAGE= Yes
 
 # C++11
-COMPILER= 	base-clang
+COMPILER= 	base-clang ports-gcc
 MODULES=  	devel/cmake
 
 WANTLIB=  	${COMPILER_LIBCXX} \
 		protobuf \
-		capstone
+		capstone \
+		re2
 
 LIB_DEPENDS=    devel/protobuf \
 		devel/capstone/main \
+		devel/re2
 
 CONFIGURE_ARGS+=-DCMAKE_INSTALL_PREFIX="${PREFIX}"
 

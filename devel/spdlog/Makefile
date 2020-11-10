@@ -6,7 +6,8 @@ GH_ACCOUNT= gabime
 GH_PROJECT= spdlog
 GH_TAGNAME= v1.8.1
 CATEGORIES= devel
-HOMEPAGE= https://github.com/gabime/spdlog
+
+SHARED_LIBS=	spdlog	0.0
 
 MAINTAINER= Ashton Fagg <ashton@fagg.id.au>
 
@@ -14,12 +15,15 @@ MAINTAINER= Ashton Fagg <ashton@fagg.id.au>
 PERMIT_PACKAGE= Yes
 
 # C++11
-COMPILER= base-clang
+COMPILER= base-clang ports-gcc
 MODULES= devel/cmake
-WANTLIB= ${COMPILER_LIBCXX}
 
-CONFIGURE_ARGS+=-DCMAKE_INSTALL_PREFIX="${PREFIX}" \
-	-DSPDLOG_BUILD_TESTS=on \
-	-DSPDLOG_BUILD_SHARED=on
+LIB_DEPENDS= devel/fmt
+
+WANTLIB+= c++ c++abi m pthread ${COMPILER_LIBCXX}
+
+CONFIGURE_ARGS+= -DSPDLOG_BUILD_TESTS=on \
+		-DSPDLOG_BUILD_SHARED=on \
+		-DSPDLOG_FMT_EXTERNAL=on
 
 .include <bsd.port.mk>

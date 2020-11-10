@@ -101,6 +101,5 @@ lib/cmake/spdlog/spdlogConfig.cmake
 lib/cmake/spdlog/spdlogConfigTargets${MODCMAKE_BUILD_SUFFIX}
 lib/cmake/spdlog/spdlogConfigTargets.cmake
 lib/cmake/spdlog/spdlogConfigVersion.cmake
-lib/libspdlog.so.1
-lib/libspdlog.so.1.8.1
+@lib lib/libspdlog.so.${LIBspdlog_VERSION}
 lib/pkgconfig/spdlog.pc
