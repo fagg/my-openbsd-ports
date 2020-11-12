@@ -10,7 +10,7 @@ GH_TAGNAME=		2020-11-01
 # not understanding the versioning convention.
 PKGNAME=		re2-${GH_TAGNAME:S,-,,g}
 
-SHARED_LIBS=		libre2	0.0
+SHARED_LIBS=		re2	0.0
 
 MAINTAINER=		Ashton Fagg <ashton@fagg.id.au>
 
