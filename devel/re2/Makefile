@@ -5,7 +5,6 @@ CATEGORIES=		devel
 GH_ACCOUNT=		google
 GH_PROJECT=		re2
 GH_TAGNAME=		2020-11-01
-DISTNAME=		re2-${GH_TAGNAME}
 
 # This is needed because otherwise the package build pukes due to it
 # not understanding the versioning convention.
