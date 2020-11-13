@@ -1,7 +1,5 @@
 @comment $OpenBSD: PLIST,v$
 bin/glances
-etc/
-etc/glances.conf
 lib/python${MODPY_VERSION}/site-packages/Glances-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
 lib/python${MODPY_VERSION}/site-packages/Glances-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
 lib/python${MODPY_VERSION}/site-packages/Glances-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/SOURCES.txt

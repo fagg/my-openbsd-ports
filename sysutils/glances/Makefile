@@ -9,7 +9,7 @@ PKGNAME =		${DISTNAME:L}
 
 CATEGORIES =		sysutils
 
-HOMEPAGE =		https://github.com/nicolargo/glances
+HOMEPAGE =		https://nicolargo.github.io/glances
 
 MAINTAINER =		Ashton Fagg <ashton@fagg.id.au>
 
@@ -21,7 +21,8 @@ MODPY_VERSION=		${MODPY_DEFAULT_VERSION_3}
 
 MODPY_PI =		Yes
 MODPY_SETUPTOOLS =	Yes
-RUN_DEPENDS=		sysutils/py-psutil${MODPY_FLAVOR}
+RUN_DEPENDS=		sysutils/py-psutil${MODPY_FLAVOR} \
+			devel/py-future${MODPY_FLAVOR}
 
 
 .include <bsd.port.mk>
