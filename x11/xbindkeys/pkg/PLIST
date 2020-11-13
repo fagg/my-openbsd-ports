@@ -1,0 +1,7 @@
+@comment $OpenBSD: PLIST,v 1.4 2018/06/27 21:04:23 espie Exp $
+@bin bin/xbindkeys
+bin/xbindkeys_show
+@man man/man1/xbindkeys.1
+@man man/man1/xbindkeys_show.1
+share/applications/xbindkeys.desktop
+@tag update-desktop-database
