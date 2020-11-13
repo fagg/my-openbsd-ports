@@ -1,0 +1,11 @@
+$OpenBSD: README,v 1.5 2018/09/04 12:46:18 espie Exp $
+
++-----------------------------------------------------------------------
+| Running ${PKGSTEM} on OpenBSD
++-----------------------------------------------------------------------
+
+Note that rTorrent has hash performance issues on BSD systems.
+
+An example configuration file has been installed in
+${TRUEPREFIX}/share/examples/rtorrent.  It may serve as a starting point
+for tweaking rTorrent performance.
