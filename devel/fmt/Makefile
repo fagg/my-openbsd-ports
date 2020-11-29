@@ -13,12 +13,12 @@ CATEGORIES=		devel
 MAINTAINER=		Ashton Fagg <ashton@fagg.id.au>
 
 # MIT
-PERMIT_PACKAGE=		Yes
+PERMIT_PACKAGE=	Yes
 
 # C++11
 COMPILER=		base-clang ports-gcc
 MODULES=		devel/cmake
-WANTLIB+=		c++ c++abi ${COMPILER_LIBCXX}
+WANTLIB+=		${COMPILER_LIBCXX}
 
 
 CONFIGURE_ARGS+=	-DBUILD_SHARED_LIBS=on
