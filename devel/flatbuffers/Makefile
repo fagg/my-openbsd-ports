@@ -16,7 +16,7 @@ MAINTAINER=	Ashton Fagg <ashton@fagg.id.au>
 # Apache 2
 PERMIT_PACKAGE= Yes
 
-WANTLIB += ${COMPILER_LIBCXX} c m
+WANTLIB +=	${COMPILER_LIBCXX} c m
 
 COMPILER=	base-clang ports-gcc
 MODULES=	devel/cmake
