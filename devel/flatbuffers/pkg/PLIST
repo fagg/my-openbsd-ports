@@ -23,5 +23,4 @@ lib/cmake/flatbuffers/FlatbuffersSharedTargets${MODCMAKE_BUILD_SUFFIX}
 lib/cmake/flatbuffers/FlatbuffersSharedTargets.cmake
 lib/cmake/flatbuffers/FlatcTargets${MODCMAKE_BUILD_SUFFIX}
 lib/cmake/flatbuffers/FlatcTargets.cmake
-lib/libflatbuffers.so.1
-lib/libflatbuffers.so.1.12.0
+@lib lib/libflatbuffers.so.${LIBflatbuffers_VERSION}

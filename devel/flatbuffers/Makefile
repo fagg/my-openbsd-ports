@@ -16,7 +16,7 @@ MAINTAINER=	Ashton Fagg <ashton@fagg.id.au>
 # Apache 2
 PERMIT_PACKAGE= Yes
 
-WANTLIB +=	${COMPILER_LIBCXX} c m
+WANTLIB += ${COMPILER_LIBCXX} c m
 
 COMPILER=	base-clang ports-gcc
 MODULES=	devel/cmake
@@ -26,4 +26,3 @@ CONFIGURE_ARGS=	-DFLATBUFFERS_BUILD_SHAREDLIB=on \
 		-DFLATBUFFERS_BUILD_FLATLIB=off
 
 .include <bsd.port.mk>
-
