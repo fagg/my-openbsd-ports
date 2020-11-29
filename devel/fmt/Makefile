@@ -4,7 +4,7 @@ COMMENT=		alternative formatting library for C and C++
 
 GH_ACCOUNT=		fmtlib
 GH_PROJECT=		fmt
-GH_TAGNAME=		7.1.1
+GH_TAGNAME=		7.1.3
 
 SHARED_LIBS=		fmt	0.0
 
