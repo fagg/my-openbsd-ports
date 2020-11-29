@@ -21,6 +21,7 @@ MODULES= devel/cmake
 LIB_DEPENDS= devel/fmt
 
 WANTLIB+= c++ c++abi m pthread ${COMPILER_LIBCXX}
+WANTLIB+= fmt
 
 CONFIGURE_ARGS+= -DSPDLOG_BUILD_TESTS=on \
 		-DSPDLOG_BUILD_SHARED=on \

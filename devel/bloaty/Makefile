@@ -17,14 +17,14 @@ PERMIT_PACKAGE= Yes
 COMPILER= 	base-clang ports-gcc
 MODULES=  	devel/cmake
 
+LIB_DEPENDS=    devel/protobuf \
+		devel/capstone/main \
+		devel/re2
+
 WANTLIB=  	${COMPILER_LIBCXX} \
 		protobuf \
 		capstone \
 		re2
-
-LIB_DEPENDS=    devel/protobuf \
-		devel/capstone/main \
-		devel/re2
 
 CONFIGURE_ARGS+=-DCMAKE_INSTALL_PREFIX="${PREFIX}"
 
