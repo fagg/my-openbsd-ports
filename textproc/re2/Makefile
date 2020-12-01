@@ -19,6 +19,9 @@ WANTLIB= 		${COMPILER_LIBCXX} m pthread
 COMPILER= 		base-clang ports-gcc
 MODULES=  		devel/cmake
 
+# Note: One of the regression tests is quite lengthy, and is subject
+# to a timelimit enforced by CMake. The default (1500 secs) works on
+# the maintainer's machine, but may timeout on slower systems.
 CONFIGURE_ARGS+=	-DBUILD_SHARED_LIBS=on
 
 .include <bsd.port.mk>
