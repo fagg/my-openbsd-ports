@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: CMakeLists.txt
+--- CMakeLists.txt.orig
++++ CMakeLists.txt
+@@ -132,6 +132,8 @@ if(RE2_BUILD_TESTING)
+     add_executable(${target} re2/testing/${target}.cc util/test.cc)
+     target_link_libraries(${target} testing re2 ${EXTRA_TARGET_LINK_LIBRARIES})
+     add_test(NAME ${target} COMMAND ${target})
++    # Default timeout is 1500 seconds.
++    set_tests_properties(${target} PROPERTIES TIMEOUT 10)
+   endforeach(target)
+ 
+   foreach(target ${BENCHMARK_TARGETS})
