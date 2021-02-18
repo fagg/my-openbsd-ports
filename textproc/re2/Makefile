@@ -4,7 +4,7 @@ COMMENT=		fast, safe, thread-friendly regular expression engine
 CATEGORIES=		textproc
 GH_ACCOUNT=		google
 GH_PROJECT=		re2
-GH_TAGNAME=		2020-11-01
+GH_TAGNAME=		2021-02-02
 PKGNAME=		re2-${GH_TAGNAME:S,-,,g}
 
 SHARED_LIBS=		re2	0.0
